@@ -1,0 +1,28 @@
+.team-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.team-subteam-cards {
+  width: 100%;
+  display: grid;
+  grid-gap: 20px;
+  max-width: 1400px;
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-threeunits);
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media(max-width: 900px) {
+  .team-subteam-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(max-width: 479px) {
+  .team-subteam-cards {
+    grid-template-columns: 1fr;
+  }
+}
