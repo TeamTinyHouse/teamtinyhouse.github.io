@@ -127,7 +127,7 @@
   text-align: left;
 }
 .socialIcon {
-  fill: #6AA84F;
+  fill: var(--dl-color-teamtinyhouse-yellow);
   width: 30px;
   height: 30px;
   text-decoration: none;
