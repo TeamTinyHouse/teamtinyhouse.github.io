@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en" dir="ltr">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>Reviews | Amith Polineni</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/robot_favicon.png">
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-bar">
+
+         <div class="nav-bar-left">
+
+           <div class="nav-bar-link">
+             <a href="/">Portfolio</a>
+           </div>
+
+           <div class="nav-bar-link">
+             <a href="about">About</a>
+           </div>
+
+           <div class="nav-bar-link active-nav-link">
+             <a href="review">Review</a>
+           </div>
+
+         </div>
+
+         <div class="nav-bar-right">
+           <div class="nav-bar-name">
+              AMITH POLINENI
+           </div>
+           <div class="profile-pic">
+             <a href="index.html"><img src="images/headshot.jpg"></a>
+           </div>
+         </div>
+      </div>
+      <div class="two-columns-reviews">
+         <div class="review-box">
+            <div class="review-heading">Have a positive memory with me? <br> Share it in a review!</div>
+            <br>
+            <div class="review">
+               Enter your name and color of choice:
+               <div class="info">
+                  <input type="text" id="name" name="name" placeholder="Name">
+                  <input type="color" id="color" name="color">
+               </div>
+               <div class="comment-box">
+                  Type your comment here and then post it:
+                  <textarea name="comment" id="comment" placeholder="Leave a comment!"></textarea>
+               </div>
+               <input type="submit" id="submit" Name="submit" value="Post">
+            </div>
+         </div>
+         <div class="experiences-box">
+            <div id="experiences">
+               <!-- experience here -->
+                <div class="loader-box">
+                  <div class="loader"></div>
+               </div>
+            </div>
+            <div id="load-more-button">
+               <button type="button" id="load-more" name="load-more">Load more posts</button>
+            </div>
+         </div>
+      </div>
+
+    </div>
+
+    <footer>
+         <div class="credit">
+             Made from scratch by Amith Polineni | 2021
+         </div>
+         <div class="socials">
+                <div class = "social">
+                  <a href="https://www.linkedin.com/in/amithpolineni/" target="_blank" rel="noopener noreferrer">
+                     <div class="icon">
+                        <i class="fa fa-linkedin"></i>
+                     </div>
+                    <span>
+                       @Amith Polineni
+                    </span>
+                  </a>
+              </div>
+                <div class = "social">
+                  <a href="https://www.facebook.com/Amith.Polineni25/" target="_blank" rel="noopener noreferrer">
+                    <div class="icon">
+                     <i class="fa fa-facebook"></i>
+                  </div>
+                  <span>
+                     @Amith Polineni
+                  </span>
+                </a>
+              </div>
+                <div class = "social">
+                  <a href="https://github.com/FrenchFry-King25" target="_blank" rel="noopener noreferrer">
+                    <div class="icon">
+                       <i class="fa fa-github"></i>
+                    </div>
+                    <span>
+                        @FrenchFry-King25
+                    </span>
+                  </a>
+              </div>
+              <div class = "social">
+                  <a href="mailto: vishnupolineni@outlook.com" target="_blank" rel="noopener noreferrer">
+                     <div class="icon">
+                       <i class="fa fa-envelope"></i>
+                     </div>
+                     <span>
+                        vishnupolineni@outlook.com
+                     </span>
+                </a>
+              </div>
+         </div>
+      </footer>
+
+      <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js";
+        import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+           apiKey: "AIzaSyDEaObgoUZAEDzjWPc0xfROaOcXw0Abswc",
+         authDomain: "amith-s-reviews.firebaseapp.com",
+         databaseURL: "https://amith-s-reviews-default-rtdb.firebaseio.com",
+         projectId: "amith-s-reviews",
+         storageBucket: "amith-s-reviews.appspot.com",
+         messagingSenderId: "796801060722",
+         appId: "1:796801060722:web:85077c088729a3eba017eb"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+        var loadnum = 10;
+        var values = [];
+
+        const starCountRef = ref(database, "friend/");
+        var index = 0;
+        onValue(starCountRef, (snapshot) => {
+          var data = snapshot.val();
+          console.log(data);
+          values = Object.values(data);
+          index = values.length + 1
+
+          console.log(values)
+          document.getElementById("experiences").innerHTML = "";
+          loadPosts(0);
+        });
+
+        document.getElementById("load-more").addEventListener('click', () => {
+           let tempLoadnum = loadnum;
+           loadnum += 5;
+           loadPosts(tempLoadnum);
+        });
+
+        function loadPosts(start) {
+           console.log("loadNum" + loadnum)
+           console.log("start" + start)
+           // we want to load the posts from the end of the array so newest appear on the top
+           for(let i = (values.length - start - 1); i >= (values.length - loadnum); i--) {
+             console.log(i)
+             console.log(index)
+               if(i < 0) {
+                  console.log("done");
+                  document.getElementById("load-more-button").innerHTML = "";
+                  break;
+               }
+
+             var experience = document.createElement('div');
+             experience.setAttribute('class', 'experience');
+
+             var name = document.createElement('div');
+             name.setAttribute('class', 'experience-name');
+             name.appendChild(document.createTextNode(values[i].name));
+             name.style.color = values[i].color;
+
+             var comment = document.createElement('div');
+             comment.setAttribute('class', 'experience-comment');
+             comment.appendChild(document.createTextNode(values[i].comment));
+
+             experience.appendChild(name);
+             experience.appendChild(comment);
+
+             console.log("experience" + experience);
+             document.getElementById("experiences").appendChild(experience);
+          }
+        }
+
+        //start of my code
+        submit.addEventListener('click',(e) => {
+        var name = document.getElementById('name').value;
+        var color = document.getElementById('color').value;
+        var comment = document.getElementById('comment').value;
+        if(name.length > 0)
+        {
+          set(ref(database, "friend/" + (index + 1)), {
+             name: name,
+             color: color,
+             comment : comment
+          });
+        }
+        alert('saved');
+        });
+
+      </script>
+
+  </body>
+
+</html>
