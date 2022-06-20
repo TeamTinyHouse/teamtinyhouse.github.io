@@ -6,6 +6,18 @@
   align-items: center;
   flex-direction: column;
 }
+.currentGoal
+{
+	background-color: var(--dl-color-teamtinyhouse-white);
+	padding: 10px;
+	padding-bottom: 16px;
+	box-shadow: 10px 10px 0px 0px #f1c232;
+}
+.currentGoalCont
+{
+	padding-left: 16px;
+	padding-right: 16px;
+}
 @media(max-width: 479px) {
   .progress-even-update {
     flex-direction: column;
