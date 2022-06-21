@@ -63,6 +63,9 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+.navLink:hover {
+  color:#c59400;
+}
 .homeNavBar {
   top: 0px;
   flex: 0 0 auto;
