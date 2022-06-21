@@ -132,6 +132,9 @@
   height: 30px;
   text-decoration: none;
 }
+.socialIcon:hover {    
+  filter: brightness(0);
+}
 .footerCredit {
   margin-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
