@@ -18,6 +18,9 @@
 	padding-left: 16px;
 	padding-right: 16px;
 }
+.updateDesc a {
+  text-decoration: underline;
+}
 @media(max-width: 479px) {
   .progress-even-update {
     flex-direction: column;
