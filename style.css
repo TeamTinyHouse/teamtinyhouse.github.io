@@ -66,6 +66,10 @@
 .navLink:hover {
   color:#c59400;
 }
+.navLinkHere {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
 .homeNavBar {
   top: 0px;
   flex: 0 0 auto;
