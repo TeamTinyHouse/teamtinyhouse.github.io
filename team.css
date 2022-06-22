@@ -16,6 +16,17 @@
   padding-bottom: var(--dl-space-space-threeunits);
   grid-template-columns: 1fr 1fr 1fr;
 }
+.teamPic {
+  width:90%;
+  max-width: 700px;
+  display: flex;
+}
+.teamImg {
+  width: 100%;
+  /* box-shadow: 7px 7px 0px 0px #f1c232; */
+  border-color: #f1c232;
+  border-width: 7px;;
+}
 @media(max-width: 900px) {
   .team-subteam-cards {
     grid-template-columns: 1fr 1fr;
