@@ -16,7 +16,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+html:hover {
+  background-color: #000000;
+}
 .button {
   color: #000000;
   display: inline-block;
