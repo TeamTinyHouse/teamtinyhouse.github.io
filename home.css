@@ -6,9 +6,10 @@
   align-items: center;
   flex-direction: column;
 }
+
 .home-logo {
   background: white;
-  padding-top: var(--dl-space-space-unit);
+  padding-top: var(--one);
   border-radius: 4px;
   text-decoration: none;
   border-top-left-radius: 0;
@@ -16,6 +17,7 @@
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
 }
+
 .home-hero {
   flex: 0 0 auto;
   width: 100%;
@@ -28,6 +30,7 @@
   justify-content: center;
   background-image: url('https://images.unsplash.com/photo-1434394354979-a235cd36269d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDExfHxtb3VudGFpbnN8ZW58MHx8fHwxNjUzOTM3NDQ3&ixlib=rb-1.2.1&w=1500');
 }
+
 .home-t-t-h {
   color: #000000;
   width: 450px;
@@ -35,18 +38,21 @@
   text-align: left;
   font-family: Merriweather;
 }
+
 .home-mission {
   width: 30%;
   display: flex;
   align-items: center;
-  padding-top: var(--dl-space-space-twounits);
-  padding-left: var(--dl-space-space-twounits);
-  padding-right: var(--dl-space-space-twounits);
+  padding-top: var(--two);
+  padding-left: var(--two);
+  padding-right: var(--two);
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-twounits);
+  padding-bottom: var(--two);
   justify-content: center;
-  background-color: var(--dl-color-teamtinyhouse-white);
+  background-color: rgb(239 239 239 / 80%);
+  border-radius: 20px;
 }
+
 .home-mission-head {
   color: #FFFFFF;
   width: 100%;
@@ -55,30 +61,40 @@
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 5px;
-  background-color: var(--dl-color-teamtinyhouse-green);
+  background-color: rgb(106 168 79 / 80%);
+  border-radius: 10px;
 }
+
 .home-mission-text {
-  line-height: 1.25;
-  padding-top: var(--dl-space-space-unit);
+  line-height: 1.5rem;
+  padding-top: var(--one);
+  font-size: 1.05rem;
 }
+
+.home-mission-bullet {
+  margin-left: var(--one);
+}
+
 .home-process {
   width: 100%;
   display: flex;
-  padding: var(--dl-space-space-threeunits);
+  padding: var(--three);
   max-width: 1400px;
   align-items: center;
   flex-direction: column;
 }
+
 .home-steps {
   width: 100%;
   display: grid;
-/*   align-items: center; */
+  /*   align-items: center; */
   grid-row-gap: 20px;
   flex-direction: row;
   grid-column-gap: 20px;
   justify-content: space-between;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
 .home-container1 {
   flex: 0 0 auto;
   width: 100%;
@@ -86,17 +102,19 @@
   max-width: 1400px;
   align-items: center;
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-twounits);
+  padding-bottom: var(--two);
   justify-content: center;
 }
+
 .home-image {
   width: 90%;
   align-self: center;
   object-fit: cover;
 }
+
 .WHWcont {
-  background-color: var(--dl-color-teamtinyhouse-white);
-  margin-top: var(--dl-space-space-threeunits);
+  background-color: var(--white);
+  margin-top: var(--three);
   width: 90%;
   height: auto;
   /* height: 200px; */
@@ -104,77 +122,90 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
 .WHWshape {
-  background-color: var(--dl-color-teamtinyhouse-yellow);
-  width:100px;
-  height:100px;
+  background-color: var(--yellow);
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .WHWcard {
-  padding: var(--dl-space-space-unit);
+  padding: var(--one);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .WHWshape-name {
   font-family: Merriweather;
   font-size: 1.5rem;
 }
+
 .WHWhead {
   font-family: Merriweather;
   font-size: 1.5rem;
-  margin-top: var(--dl-space-space-unit);
+  margin-top: var(--one);
   margin-bottom: 8px;
 }
+
 .WHWtxt {
   max-width: 200px;
   text-align: center;
 }
+
 @media(max-width: 991px) {
   .home-mission {
-    margin-top: var(--dl-space-space-twounits);
+    margin-top: var(--two);
   }
+
   .home-steps {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media(max-width: 767px) {
   .home-hero {
     height: 800px;
     flex-direction: column;
   }
+
   .home-t-t-h {
     width: 100%;
     margin-top: 100px;
     text-align: center;
   }
+
   .home-mission {
     width: 90%;
   }
+
   .home-steps {
     flex-direction: column;
   }
 }
+
 @media(max-width: 479px) {
   .home-logo {
-    margin-top: var(--dl-space-space-unit);
-    padding-top: 0px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    margin-top: -16px;
   }
+
   .home-hero {
     height: 900px;
   }
+
   .home-t-t-h {
     font-size: 5rem;
-    margin-top: 200px;
+    /* margin-top: 200px; */
   }
+
   .home-steps {
     grid-template-columns: 1fr;
   }
+
   .WHWcont {
     grid-template-columns: 1fr;
   }

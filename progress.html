@@ -1,294 +1,341 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <title>Progress - Team Tiny House</title>
-    <meta property="og:title" content="Progress - Team Tiny House" />
-    <meta property="og:title" content="Team - Team Tiny House" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Nunito;
-        font-size: 16px;
-      }
+<head>
+  <title>Progress - Team Tiny House</title>
+  <meta property="og:title" content="Progress - Team Tiny House" />
+  <meta property="og:title" content="Team - Team Tiny House" />
 
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-teamtinyhouse-black);
-        background-color: var(--dl-color-teamtinyhouse-greengrey);
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <style data-tag="reset-style-sheet">
+    html {
+      line-height: 1.15;
+    }
 
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="shortcut icon"
-      href="images/simpleLogo.png"
-      type="icon/png"
-      sizes="32x32"
-    />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div>
-      <link href="./progress.css" rel="stylesheet" />
+    body {
+      margin: 0;
+    }
 
-      <div class="progress-container">
-        <div class="navBar">
-          <a href="/">
-            <img
-              alt="image"
-              src="images/tth%20logo-200h.png"
-              class="NavLogo"
-            />
+    * {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+    }
+
+    p,
+    li,
+    ul,
+    pre,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      padding: 0;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+      -webkit-appearance: button;
+    }
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    button:-moz-focus,
+    [type="button"]:-moz-focus,
+    [type="reset"]:-moz-focus,
+    [type="submit"]:-moz-focus {
+      outline: 1px dotted ButtonText;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    input {
+      padding: 2px 4px;
+    }
+
+    img {
+      display: block;
+    }
+  </style>
+  <style data-tag="default-style-sheet">
+    html {
+      font-family: Nunito;
+      font-size: 16px;
+    }
+
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: normal;
+      line-height: 1.15;
+      color: var(--dl-color-teamtinyhouse-black);
+      background-color: var(--dl-color-teamtinyhouse-greengrey);
+
+    }
+  </style>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    data-tag="font" />
+  <link rel="shortcut icon" href="images/simpleLogo.png" type="icon/png" sizes="32x32" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div>
+    <link href="./progress.css" rel="stylesheet" />
+
+    <div class="progress-container">
+      <div id="navBar" class="navBar">
+        <a href="/">
+          <img alt="image" src="images/tth%20logo-200h.png" class="NavLogo" />
+        </a>
+        <div class="navPagesLinks">
+          <a href="/" class="navLink">Home</a>
+          <a href="team" class="navLink">Team</a>
+          <a href="progress" class="navLink navLinkHere">Progress</a>
+          <a href="donate" class="navLink">Donate</a>
+        </div>
+        <div class="burger" id="burger_icon_box">
+          <img id="burger_icon" src="images/burger_icon.png" alt="burger_icon">
+        </div>
+        <div class="burgerLinks" id="burgerLinks">
+          <a href="/" class="navLink">Home</a>
+          <a href="team" class="navLink">Team</a>
+          <a href="progress" class="navLink">Progress</a>
+          <a href="donate" class="navLink navLinkHere">Donate</a>
+        </div>
+      </div>
+      <h1 class="pageHeading">
+        <span>Progress &amp; Updates</span>
+        <span></span>
+      </h1>
+      <div class="currentGoalCont">
+        <div class="currentGoal">
+          <h1 class="updateName">Current Goal for 22-23 School Year</h1>
+          <span class=currentDesc> 1) Experiemnt with induvidual elements of the house over the summer. </span>
+          <br><br>
+          <span class=currentDesc> 2) Construct small sections of the actual Tiny House indoors through the
+            winter.</span>
+          <br><br>
+          <span class=currentDesc> 3) Assemble small parts into full-fledged Tiny House outdoors in Spring 2023. </span>
+        </div>
+      </div>
+      <div class="oddUpdate">
+        <div class="updateInfo">
+          <span class="updateDate">
+            <span>June 14, 2022</span>
+          </span>
+          <h1 class="updateName">SketchUp Youtube Tutorials</h1>
+          <span class="updateDesc">
+            <span>TTH’s very own Amith Polineni and Dhruv Chandna jumpstart our newest effort to make a highly-detailed
+              model of the house in SketchUp. SketchUp is a 3D modeling program that, overall, is superior to
+              traditional CAD software for modeling architecture, but its high learning curve is a hindrance. To combat
+              this drawback, Amith and Dhruv are making video tutorials targeting the specific areas where SketchUp
+              differs, and they use the same niche education version of the program. </span>
+            <span>
+              <a href="https://youtu.be/BiFFTLZv4k0" target="_blank" rel="noreferrer noopener">Watch the Video here!</a>
+            </span>
+            <br />
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <img alt="image" src="images/youtube_thumbnail.jpg" class="updateImg" />
+      </div>
+      <div class="evenUpdate">
+        <div class="updateInfo">
+          <span class="updateDate">
+            <span>June 2, 2022</span>
+          </span>
+          <h1 class="updateName">Rough CAD Model</h1>
+          <span class="updateDesc">
+            <span>
+              We finished an un-detailed 3D model of our latest floor plan to get a better picture of the space in 3D.
+              Every part is to-scale and in the right location, although not detailed. Our model points out a few flaws
+              that we wouldn’t otherwise see in a 2D sketch such as not enough room in between the futon & desk and too
+              much room in between the kitchen and loft. We will take these problems into consideration and update the
+              current floor plan.
+            </span>
+          </span>
+        </div>
+        <img alt="image" src="images/tth_cad.png" class="updateImg" />
+      </div>
+      <div class="oddUpdate">
+        <div class="updateInfo">
+          <span class="updateDate">
+            <span>May 29, 2022</span>
+          </span>
+          <h1 class="updateName">Floor Plan mk.2</h1>
+          <span class="updateDesc">
+            <span></span>
+            <span>
+              Designed by the Interior Construction team, our new floor plan
+              better utilizes the limited space. Before, the bathroom and
+              kitchen hallways were both uncomfortably narrow, which we
+              realized only after drawing the floorplan to-scale on the floor
+              in real life. Our new design pushes the bathroom all the way to
+              the left wall and has a waterproof closet inside. The kitchen
+              has the sink, stove, and eating peninsula on one side, and a
+              fridge with shoe storage underneath on the other side. The door
+              has been moved to the other side of the house to free up space
+              behind the eating stools. Additionally, the loft has been
+              extended to 6 ft to match the size of a futon underneath; a
+              longer loft means more storage. The cabinet wall has been
+              removed because the closet in the bathroom and loft provide
+              sufficient storage.
+            </span>
+            <br />
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <img alt="image" src="images/floorplan2-1400w.jpg" class="updateImg" />
+      </div>
+      <div class="evenUpdate">
+        <div class="updateInfo">
+          <span class="updateDate">
+            <span>May 5, 2022</span>
+          </span>
+          <h1 class="updateName">Floor Plan mk.1</h1>
+          <span class="updateDesc">
+            <span>
+              After a few weeks of researching, brainstorming, and
+              deliberating every aspect of the floor plan, we have chosen a
+              final design. The main sections of the house will include the
+              kitchen, bathroom, closet/shelving wall, loft, and lounge area.
+              Now, we will split up into our sub-teams and draw blueprints for
+              every part of the house.
+            </span>
+            <br />
+            <span>
+              If you have any questions or are interested to learn more,
+              please email us at teamtinyhouse.org@gmail.com or visit us at
+              our outreach events!
+            </span>
+            <br />
+            <span></span>
+          </span>
+        </div>
+        <img alt="image" src="images/floorplan-1400w.png" class="updateImg" />
+      </div>
+      <div class="oddUpdate">
+        <div class="updateInfo">
+          <span class="updateDate">
+            <span>May 5, 2022</span>
+          </span>
+          <h1 class="updateName">Timeline Illustrated</h1>
+          <span class="updateDesc">
+            <span>
+              We have a timeline for the start of the project to keep us on
+              track. We plan to finish blueprints of all Tiny House systems
+              and parts by June 18th, and start construction towards the end
+              of the summer.
+            </span>
+            <br />
+            <span></span>
+          </span>
+        </div>
+        <img alt="image" src="images/timeline1-1400w.jpg" class="updateImg" />
+      </div>
+      <div class="footer">
+        <div class="footerLogo">
+          <img alt="image" src="images/tth%20logo-200h.png" class="footerImg" />
+        </div>
+        <div class="footerCredits">
+          <span class="footerCredit">© 2022 TEAM TINY HOUSE</span>
+          <a href="https://amithp.com" target="_blank" rel="noreferrer noopener" class="footerCredit">
+            Designed by Amith Polineni
           </a>
-          <div class="navPagesLinks">
-            <a href="/" class="navLink">Home</a>
-            <a href="team" class="navLink">Team</a>
-            <a href="progress" class="navLink navLinkHere">Progress</a>
-          </div>
         </div>
-        <h1 class="pageHeading">
-          <span>Progress &amp; Updates</span>
-          <span></span>
-        </h1>
-        <div class="currentGoalCont">
-					<div class="currentGoal">
-						<h1 class="updateName">Current Goal for 22-23 School Year</h1>
-						<span class=currentDesc> 1)	Experiemnt with induvidual elements of the house over the summer. </span>
-						<br><br>
-						<span class=currentDesc> 2)	Construct small sections of the actual Tiny House indoors through the winter.</span>
-						<br><br>
-						<span class=currentDesc> 3)	Assemble small parts into full-fledged Tiny House outdoors in Spring 2023. </span>
-					</div>	
-				</div>
-	 <div class="oddUpdate">
-          <div class="updateInfo">
-            <span class="updateDate">
-              <span>June 14, 2022</span>
-            </span>
-            <h1 class="updateName">SketchUp Youtube Tutorials</h1>
-            <span class="updateDesc">
-              <span>TTH’s very own Amith Polineni and Dhruv Chandna jumpstart our newest effort to make a highly-detailed model of the house in SketchUp. SketchUp is a 3D modeling program that, overall, is superior to traditional CAD software for modeling architecture, but its high learning curve is a hindrance. To combat this drawback, Amith and Dhruv are making video tutorials targeting the specific areas where SketchUp differs, and they use the same niche education version of the program. </span>
-              <span>
-                <a href="https://youtu.be/BiFFTLZv4k0" target="_blank" rel="noreferrer noopener">Watch the Video here!</a>
-              </span>
-              <br />
-              <span></span>
-              <span></span>
-            </span>
-          </div>
-          <img
-            alt="image"
-            src="images/youtube_thumbnail.jpg"
-            class="updateImg"
-          />
-        </div>
-        <div class="evenUpdate progress-even-update">
-          <div class="updateInfo">
-            <span class="updateDate">
-              <span>June 2, 2022</span>
-            </span>
-            <h1 class="updateName">Rough CAD Model</h1>
-            <span class="updateDesc">
-              <span>
-                We finished an un-detailed 3D model of our latest floor plan to get a better picture of the space in 3D. Every part is to-scale and in the right location, although not detailed. Our model points out a few flaws that we wouldn’t otherwise see in a 2D sketch such as not enough room in between the futon & desk and too much room in between the kitchen and loft. We will take these problems into consideration and update the current floor plan.
-              </span>
-            </span>
-          </div>
-          <img
-            alt="image"
-            src="images/tth_cad.png"
-            class="updateImg"
-          />
-        </div>
-        <div class="oddUpdate">
-          <div class="updateInfo">
-            <span class="updateDate">
-              <span>May 29, 2022</span>
-            </span>
-            <h1 class="updateName">Floor Plan mk.2</h1>
-            <span class="updateDesc">
-              <span></span>
-              <span>
-                Designed by the Interior Construction team, our new floor plan
-                better utilizes the limited space. Before, the bathroom and
-                kitchen hallways were both uncomfortably narrow, which we
-                realized only after drawing the floorplan to-scale on the floor
-                in real life. Our new design pushes the bathroom all the way to
-                the left wall and has a waterproof closet inside. The kitchen
-                has the sink, stove, and eating peninsula on one side, and a
-                fridge with shoe storage underneath on the other side. The door
-                has been moved to the other side of the house to free up space
-                behind the eating stools. Additionally, the loft has been
-                extended to 6 ft to match the size of a futon underneath; a
-                longer loft means more storage. The cabinet wall has been
-                removed because the closet in the bathroom and loft provide
-                sufficient storage.
-              </span>
-              <br />
-              <span></span>
-              <span></span>
-            </span>
-          </div>
-          <img
-            alt="image"
-            src="images/floorplan2-1400w.jpg"
-            class="updateImg"
-          />
-        </div>
-        <div class="evenUpdate progress-even-update">
-          <div class="updateInfo">
-            <span class="updateDate">
-              <span>May 5, 2022</span>
-            </span>
-            <h1 class="updateName">Floor Plan mk.1</h1>
-            <span class="updateDesc">
-              <span>
-                After a few weeks of researching, brainstorming, and
-                deliberating every aspect of the floor plan, we have chosen a
-                final design. The main sections of the house will include the
-                kitchen, bathroom, closet/shelving wall, loft, and lounge area.
-                Now, we will split up into our sub-teams and draw blueprints for
-                every part of the house.
-              </span>
-              <br />
-              <span>
-                If you have any questions or are interested to learn more,
-                please email us at teamtinyhouse.org@gmail.com or visit us at
-                our outreach events!
-              </span>
-              <br />
-              <span></span>
-            </span>
-          </div>
-          <img
-            alt="image"
-            src="images/floorplan-1400w.png"
-            class="updateImg"
-          />
-        </div>
-        <div class="oddUpdate">
-          <div class="updateInfo">
-            <span class="updateDate">
-              <span>May 5, 2022</span>
-            </span>
-            <h1 class="updateName">Timeline Illustrated</h1>
-            <span class="updateDesc">
-              <span>
-                We have a timeline for the start of the project to keep us on
-                track. We plan to finish blueprints of all Tiny House systems
-                and parts by June 18th, and start construction towards the end
-                of the summer.
-              </span>
-              <br />
-              <span></span>
-            </span>
-          </div>
-          <img
-            alt="image"
-            src="images/timeline1-1400w.jpg"
-            class="updateImg"
-          />
-        </div>
-        <div class="footer">
-          <div class="footerLogo">
-            <img
-              alt="image"
-              src="images/tth%20logo-200h.png"
-              class="footerImg"
-            />
-          </div>
-          <div class="footerCredits">
-            <span class="footerCredit">© 2022 TEAM TINY HOUSE</span>
-            <a
-              href="https://amithp.com"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="footerCredit"
-            >
-              Designed by Amith Polineni
-            </a>
-          </div>
-          <div class="footerSocials">
-            <a
-              href="https://www.instagram.com/team.tiny.house/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <svg
-                fill="white"
-                viewBox="0 0 877.7142857142857 1024"
-                class="socialIcon"
-              >
-                <path
-                  d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
-                ></path>
-              </svg>
-            </a>
-            <a
-              href="https://www.tiktok.com/@teamtinyhouses"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <!-- <svg fill="#6AA84F" viewBox="0 0 1024 1024" class="socialIcon">
+        <div class="footerSocials">
+          <a href="https://www.instagram.com/team.tiny.house/" target="_blank" rel="noreferrer noopener">
+            <svg fill="white" viewBox="0 0 877.7142857142857 1024" class="socialIcon">
+              <path
+                d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z">
+              </path>
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/@teamtinyhouses" target="_blank" rel="noreferrer noopener">
+            <!-- <svg fill="#6AA84F" viewBox="0 0 1024 1024" class="socialIcon">
                 <path 
                   d="M412.19,118.66a109.27,109.27,0,0,1-9.45-5.5,132.87,132.87,0,0,1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14,23.9,350,16,350.13,16H267.69V334.78c0,4.28,0,8.51-.18,12.69,0,.52-.05,1-.08,1.56,0,.23,0,.47-.05.71,0,.06,0,.12,0,.18a70,70,0,0,1-35.22,55.56,68.8,68.8,0,0,1-34.11,9c-38.41,0-69.54-31.32-69.54-70s31.13-70,69.54-70a68.9,68.9,0,0,1,21.41,3.39l.1-83.94a153.14,153.14,0,0,0-118,34.52,161.79,161.79,0,0,0-35.3,43.53c-3.48,6-16.61,30.11-18.2,69.24-1,22.21,5.67,45.22,8.85,54.73v.2c2,5.6,9.75,24.71,22.38,40.82A167.53,167.53,0,0,0,115,470.66v-.2l.2.2C155.11,497.78,199.36,496,199.36,496c7.66-.31,33.32,0,62.46-13.81,32.32-15.31,50.72-38.12,50.72-38.12a158.46,158.46,0,0,0,27.64-45.93c7.46-19.61,9.95-43.13,9.95-52.53V176.49c1,.6,14.32,9.41,14.32,9.41s19.19,12.3,49.13,20.31c21.48,5.7,50.42,6.9,50.42,6.9V131.27C453.86,132.37,433.27,129.17,412.19,118.66Z">
                 </path>
               </svg> -->
-              <img src="images/tiktok.png" class="socialIcon" width="30" height="30" alt="Tik Tok">
-            </a>
-            <a
-              href="https://www.youtube.com/channel/UCv2TIRkZ0BWB91tqYIKJ0aA"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <svg fill="#6AA84F" viewBox="0 0 1024 1024" class="socialIcon">
-                <path
-                  d="M406.286 644.571l276.571-142.857-276.571-144.571v287.429zM512 152c215.429 0 358.286 10.286 358.286 10.286 20 2.286 64 2.286 102.857 43.429 0 0 31.429 30.857 40.571 101.714 10.857 82.857 10.286 165.714 10.286 165.714v77.714s0.571 82.857-10.286 165.714c-9.143 70.286-40.571 101.714-40.571 101.714-38.857 40.571-82.857 40.571-102.857 42.857 0 0-142.857 10.857-358.286 10.857v0c-266.286-2.286-348-10.286-348-10.286-22.857-4-74.286-2.857-113.143-43.429 0 0-31.429-31.429-40.571-101.714-10.857-82.857-10.286-165.714-10.286-165.714v-77.714s-0.571-82.857 10.286-165.714c9.143-70.857 40.571-101.714 40.571-101.714 38.857-41.143 82.857-41.143 102.857-43.429 0 0 142.857-10.286 358.286-10.286v0z"
-                ></path>
-              </svg>
-            </a>
-            <a
-              href="https://github.com/TeamTinyHouse"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <svg viewBox="0 0 1024 1024" class="socialIcon">
-                <path
-                  d="M512.008 12.642c-282.738 0-512.008 229.218-512.008 511.998 0 226.214 146.704 418.132 350.136 485.836 25.586 4.738 34.992-11.11 34.992-24.632 0-12.204-0.48-52.542-0.696-95.324-142.448 30.976-172.504-60.41-172.504-60.41-23.282-59.176-56.848-74.916-56.848-74.916-46.452-31.778 3.51-31.124 3.51-31.124 51.4 3.61 78.476 52.766 78.476 52.766 45.672 78.27 119.776 55.64 149.004 42.558 4.588-33.086 17.852-55.68 32.506-68.464-113.73-12.942-233.276-56.85-233.276-253.032 0-55.898 20.004-101.574 52.76-137.428-5.316-12.9-22.854-64.972 4.952-135.5 0 0 43.006-13.752 140.84 52.49 40.836-11.348 84.636-17.036 128.154-17.234 43.502 0.198 87.336 5.886 128.256 17.234 97.734-66.244 140.656-52.49 140.656-52.49 27.872 70.528 10.35 122.6 5.036 135.5 32.82 35.856 52.694 81.532 52.694 137.428 0 196.654-119.778 239.95-233.79 252.624 18.364 15.89 34.724 47.046 34.724 94.812 0 68.508-0.596 123.644-0.596 140.508 0 13.628 9.222 29.594 35.172 24.566 203.322-67.776 349.842-259.626 349.842-485.768 0-282.78-229.234-511.998-511.992-511.998z"
-                ></path>
-              </svg>
-            </a>
-            <a href="mailto:teamtinyhouse.org@gmail.com?subject=">
-              <svg viewBox="0 0 1024 1024" class="socialIcon">
-                <path
-                  d="M128 337.963l359.552 251.691c14.507 10.027 33.92 10.496 48.939 0l359.509-251.691v430.037c0 11.605-4.693 22.229-12.587 30.080s-18.475 12.587-30.080 12.587h-682.667c-11.605 0-22.229-4.693-30.080-12.587s-12.587-18.475-12.587-30.080zM42.667 256.512v511.488c0 35.328 14.507 67.371 37.547 90.453s55.125 37.547 90.453 37.547h682.667c35.328 0 67.371-14.507 90.453-37.547s37.547-55.125 37.547-90.453v-511.488c0-0.427 0-0.853 0-1.28-0.213-35.029-14.635-66.773-37.547-89.685-23.083-23.040-55.125-37.547-90.453-37.547h-682.667c-35.328 0-67.371 14.507-90.453 37.547-22.912 22.912-37.333 54.656-37.547 89.728 0 0.213 0 0.469 0 0.725zM891.477 236.971l-379.477 265.6-379.477-265.6c2.048-4.096 4.779-7.808 8.021-11.051 7.893-7.893 18.517-12.587 30.123-12.587h682.667c11.605 0 22.229 4.693 30.080 12.587 3.243 3.243 5.973 6.997 8.021 11.051z"
-                ></path>
-              </svg>
-            </a>
-          </div>
+            <img src="images/tiktok.png" class="socialIcon" width="30" height="30" alt="Tik Tok">
+          </a>
+          <a href="https://www.youtube.com/channel/UCv2TIRkZ0BWB91tqYIKJ0aA" target="_blank" rel="noreferrer noopener">
+            <svg fill="#6AA84F" viewBox="0 0 1024 1024" class="socialIcon">
+              <path
+                d="M406.286 644.571l276.571-142.857-276.571-144.571v287.429zM512 152c215.429 0 358.286 10.286 358.286 10.286 20 2.286 64 2.286 102.857 43.429 0 0 31.429 30.857 40.571 101.714 10.857 82.857 10.286 165.714 10.286 165.714v77.714s0.571 82.857-10.286 165.714c-9.143 70.286-40.571 101.714-40.571 101.714-38.857 40.571-82.857 40.571-102.857 42.857 0 0-142.857 10.857-358.286 10.857v0c-266.286-2.286-348-10.286-348-10.286-22.857-4-74.286-2.857-113.143-43.429 0 0-31.429-31.429-40.571-101.714-10.857-82.857-10.286-165.714-10.286-165.714v-77.714s-0.571-82.857 10.286-165.714c9.143-70.857 40.571-101.714 40.571-101.714 38.857-41.143 82.857-41.143 102.857-43.429 0 0 142.857-10.286 358.286-10.286v0z">
+              </path>
+            </svg>
+          </a>
+          <a href="https://github.com/TeamTinyHouse" target="_blank" rel="noreferrer noopener">
+            <svg viewBox="0 0 1024 1024" class="socialIcon">
+              <path
+                d="M512.008 12.642c-282.738 0-512.008 229.218-512.008 511.998 0 226.214 146.704 418.132 350.136 485.836 25.586 4.738 34.992-11.11 34.992-24.632 0-12.204-0.48-52.542-0.696-95.324-142.448 30.976-172.504-60.41-172.504-60.41-23.282-59.176-56.848-74.916-56.848-74.916-46.452-31.778 3.51-31.124 3.51-31.124 51.4 3.61 78.476 52.766 78.476 52.766 45.672 78.27 119.776 55.64 149.004 42.558 4.588-33.086 17.852-55.68 32.506-68.464-113.73-12.942-233.276-56.85-233.276-253.032 0-55.898 20.004-101.574 52.76-137.428-5.316-12.9-22.854-64.972 4.952-135.5 0 0 43.006-13.752 140.84 52.49 40.836-11.348 84.636-17.036 128.154-17.234 43.502 0.198 87.336 5.886 128.256 17.234 97.734-66.244 140.656-52.49 140.656-52.49 27.872 70.528 10.35 122.6 5.036 135.5 32.82 35.856 52.694 81.532 52.694 137.428 0 196.654-119.778 239.95-233.79 252.624 18.364 15.89 34.724 47.046 34.724 94.812 0 68.508-0.596 123.644-0.596 140.508 0 13.628 9.222 29.594 35.172 24.566 203.322-67.776 349.842-259.626 349.842-485.768 0-282.78-229.234-511.998-511.992-511.998z">
+              </path>
+            </svg>
+          </a>
+          <a href="mailto:teamtinyhouse.org@gmail.com?subject=">
+            <svg viewBox="0 0 1024 1024" class="socialIcon">
+              <path
+                d="M128 337.963l359.552 251.691c14.507 10.027 33.92 10.496 48.939 0l359.509-251.691v430.037c0 11.605-4.693 22.229-12.587 30.080s-18.475 12.587-30.080 12.587h-682.667c-11.605 0-22.229-4.693-30.080-12.587s-12.587-18.475-12.587-30.080zM42.667 256.512v511.488c0 35.328 14.507 67.371 37.547 90.453s55.125 37.547 90.453 37.547h682.667c35.328 0 67.371-14.507 90.453-37.547s37.547-55.125 37.547-90.453v-511.488c0-0.427 0-0.853 0-1.28-0.213-35.029-14.635-66.773-37.547-89.685-23.083-23.040-55.125-37.547-90.453-37.547h-682.667c-35.328 0-67.371 14.507-90.453 37.547-22.912 22.912-37.333 54.656-37.547 89.728 0 0.213 0 0.469 0 0.725zM891.477 236.971l-379.477 265.6-379.477-265.6c2.048-4.096 4.779-7.808 8.021-11.051 7.893-7.893 18.517-12.587 30.123-12.587h682.667c11.605 0 22.229 4.693 30.080 12.587 3.243 3.243 5.973 6.997 8.021 11.051z">
+              </path>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+  <script>
+    document.getElementById('burger_icon_box').addEventListener('mouseover', () => {
+      console.log("hit")
+      document.getElementById('burgerLinks').style.right = "5px"
+    })
+    document.getElementById('navBar').addEventListener('mouseleave', () => {
+      document.getElementById('burgerLinks').style.right = "-161px"
+    })
+  </script>
+</body>
+
 </html>

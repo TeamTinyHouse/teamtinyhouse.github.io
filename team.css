@@ -6,32 +6,53 @@
   align-items: center;
   flex-direction: column;
 }
+
 .team-subteam-cards {
   width: 100%;
   display: grid;
   grid-gap: 20px;
   max-width: 1400px;
-  padding-left: var(--dl-space-space-threeunits);
-  padding-right: var(--dl-space-space-threeunits);
-  padding-bottom: var(--dl-space-space-threeunits);
+  padding-left: var(--three);
+  padding-right: var(--three);
+  padding-bottom: var(--three);
   grid-template-columns: 1fr 1fr 1fr;
 }
+
 .teamPic {
-  width:90%;
+  width: 90%;
   max-width: 700px;
   display: flex;
 }
+
 .teamImg {
   width: 100%;
   /* box-shadow: 7px 7px 0px 0px #f1c232; */
   border-color: #f1c232;
-  border-width: 7px;;
+  border-width: 7px;
+  ;
 }
+
+.subTeamExplain {
+  margin-top: -20px;
+  margin-bottom: 32px;
+  padding: 16px;
+  max-width: 600px;
+  background-color: var(--white);
+  box-shadow: 0px 5px 0px 0px #f1c232, 0px -5px 0px 0px #f1c232;
+  line-height: 1.5rem;
+  font-size: 1.15rem;
+}
+
+#doraLastName {
+  font-size: 28px;
+}
+
 @media(max-width: 900px) {
   .team-subteam-cards {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media(max-width: 479px) {
   .team-subteam-cards {
     grid-template-columns: 1fr;
