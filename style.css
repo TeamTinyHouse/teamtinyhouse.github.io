@@ -425,7 +425,7 @@ html:hover {
   flex-direction: column;
   justify-content: center;
   background-color: var(--white);
-  border-width: 3px;
+  border-width: 4px;
   border-color: var(--yellow);
   border-radius: 20px;
 }
