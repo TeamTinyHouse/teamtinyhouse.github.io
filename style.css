@@ -16,9 +16,11 @@
 html {
   scroll-behavior: smooth;
 }
+
 html:hover {
   background-color: #000000;
 }
+
 .button {
   color: #000000;
   display: inline-block;
@@ -418,11 +420,14 @@ html:hover {
   display: flex;
   padding: var(--one);
   position: relative;
-  box-shadow: 7px 7px 0px 0px #f1c232;
+  box-shadow: 5px 5px 0px 0px #f1c232;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   background-color: var(--white);
+  border-width: 3px;
+  border-color: var(--yellow);
+  border-radius: 20px;
 }
 
 .personImgBg {

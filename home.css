@@ -112,12 +112,19 @@
   object-fit: cover;
 }
 
+.WHWbg {
+  background-color: var(--white);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .WHWcont {
   background-color: var(--white);
-  margin-top: var(--three);
-  width: 90%;
+  padding-top: var(--three);
+  padding-bottom: var(--two);
+  width: 100%;
   height: auto;
-  /* height: 200px; */
   max-width: 1000px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
