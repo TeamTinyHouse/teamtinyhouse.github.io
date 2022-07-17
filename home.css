@@ -165,6 +165,15 @@
   text-align: center;
 }
 
+.animationgif {
+  max-width: 800px;
+  width: 90%;
+  border-width:  4px;
+  border-color: var(--yellow);
+  border-radius: 20px;
+}
+
+
 @media(max-width: 991px) {
   .home-mission {
     margin-top: var(--two);
