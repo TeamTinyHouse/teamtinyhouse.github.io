@@ -1,157 +1,164 @@
 .everything-container {
-    width: 100%;
-    display: flex;
-    overflow: auto;
-    min-height: 100vh;
-    align-items: center;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
 }
 
 .donateContainer {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    max-width: 1200px;
-    height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1200px;
+  height: 100%;
 }
 
 .donateIntro {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
 }
 
 .donateIntroImg {
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
-    border-width: 5px;
-    border-color: var(--yellow);
-    border-radius: 20px;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-width: 5px;
+  border-color: var(--yellow);
+  border-radius: 20px;
 }
 
 .donateIntroLeft {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: var(--one);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--one);
 }
 
 .donateIntroRight {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: var(--one);
-    padding-top: var(--two);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: var(--one);
+  padding-top: var(--two);
 }
 
 .subTittle {
-    margin-top: -20px;
-    margin-bottom: 32px;
-    padding: 16px;
-    max-width: 600px;
-    background-color: var(--white);
-    box-shadow: 0px 5px 0px 0px #f1c232, 0px -5px 0px 0px #f1c232;
-    line-height: 1.5rem;
-    font-size: 1.15rem;
+  margin-top: -20px;
+  margin-bottom: 32px;
+  padding: 16px;
+  max-width: 600px;
+  background-color: var(--white);
+  box-shadow: 0px 5px 0px 0px #f1c232, 0px -5px 0px 0px #f1c232;
+  line-height: 1.5rem;
+  font-size: 1.15rem;
 }
 
 .donateStep {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .donateStepThing {
-    font-size: 1rem;
-    margin-left: 32px;
+  font-size: 1rem;
+  margin-left: 32px;
 }
 
 .donatePitch {
-    width: 90%;
-    max-width: 912px;
-    height: 50%;
-    display: flex;
-    justify-content: center;
+  width: 90%;
+  max-width: 1000px;
+  /* height: 80%; */
+  display: flex;
+  justify-content: center;
+}
+
+#linktoPDF {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .tiers {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-    padding-left: var(--two);
-    padding-right: var(--two);
-    gap: var(--two);
-    margin-bottom: var(--three);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  padding-left: var(--two);
+  padding-right: var(--two);
+  gap: var(--two);
+  margin-bottom: var(--three);
 }
 
 .tier {
-    background-color: var(--white);
-    display: flex;
-    align-items: center;
-    padding: var(--one);
-    flex-direction: column;
-    box-shadow: 7px 7px 0px 0px #f1c232;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  padding: var(--one);
+  flex-direction: column;
+  box-shadow: 7px 7px 0px 0px #f1c232;
 }
 
 .tierName {
-    font-family: Merriweather;
-    font-size: 2rem;
-    background-color: var(--yellow);
-    border-radius: 20px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    text-align: center;
-    width: 100%;
+  font-family: Merriweather;
+  font-size: 2rem;
+  background-color: var(--yellow);
+  border-radius: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+  width: 100%;
 }
 
 .tierDesc {
-    margin-top: var(--one);
-    margin-bottom: var(--one);
-    line-height: 1.25rem;
+  margin-top: var(--one);
+  margin-bottom: var(--one);
+  line-height: 1.25rem;
 }
 
 .moneyRange {
-    font-size: .75em;
+  font-size: 0.75em;
 }
 
 .tierPrizes {
-    margin-top: var(--one);
+  margin-top: var(--one);
 }
 
 .tierPrize {
-    font-size: 1rem;
-    margin-left: 32px;
-    line-height: 1.25rem;
+  font-size: 1rem;
+  margin-left: 32px;
+  line-height: 1.25rem;
 }
 
 .HUHU {
-    margin-top: -32px;
-    font-size: 1.5rem;
+  margin-top: -32px;
+  font-size: 1.5rem;
 }
 
 .donateContatInstruct {
-    margin-top: -16px;
-    font-size: 1.5rem;
+  margin-top: -16px;
+  font-size: 1.5rem;
 }
 
-@media(max-width: 800px) {
-    .donateIntro {
-        grid-template-columns: 1fr;
-    }
-    .donateIntroRight {
-        padding-top: 0;
-    }
-    .tiers {
-        grid-template-columns: 1fr 1fr;
-    }
+@media (max-width: 800px) {
+  .donateIntro {
+    grid-template-columns: 1fr;
+  }
+
+  .donateIntroRight {
+    padding-top: 0;
+  }
+
+  .tiers {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-@media(max-width: 520px) {
-    .tiers {
-        grid-template-columns: 1fr;
-    }
+@media (max-width: 520px) {
+  .tiers {
+    grid-template-columns: 1fr;
+  }
 }
