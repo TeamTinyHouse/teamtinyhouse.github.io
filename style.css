@@ -528,6 +528,7 @@ html:hover {
 
 .explainBox {
   margin-top: var(--three); 
+  margin-bottom: var(--three); 
   padding: 16px;
   max-width: 600px;
   background-color: var(--white);
