@@ -28,7 +28,7 @@ html:hover {
   border-color: #000000;
   border-width: 1px;
   border-radius: 4px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .input {
@@ -38,7 +38,7 @@ html:hover {
   border-color: #000000;
   border-width: 1px;
   border-radius: 4px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .textarea {
@@ -48,7 +48,7 @@ html:hover {
   border-color: #000000;
   border-width: 1px;
   border-radius: 4px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .list {
@@ -243,7 +243,7 @@ html:hover {
   padding-bottom: var(--two);
   padding-left: var(--one);
   padding-right: var(--one);
-  transition: .5s ease-out;
+  transition: 0.5s ease-out;
   z-index: 2;
 }
 
@@ -373,7 +373,7 @@ html:hover {
 }
 
 .subTeamCardBG img {
-  transition: opacity .5s ease-out;
+  transition: opacity 0.5s ease-out;
 }
 
 .subTeamCardTxt {
@@ -446,7 +446,7 @@ html:hover {
   opacity: 1;
   z-index: 0;
   object-fit: cover;
-  transition: opacity .5s ease-out;
+  transition: opacity 0.5s ease-out;
 }
 
 .personName {
@@ -526,7 +526,25 @@ html:hover {
   text-decoration: none;
 }
 
-@media(max-width: 1200px) {
+.explainBox {
+  margin-top: var(--three); 
+  padding: 16px;
+  max-width: 600px;
+  background-color: var(--white);
+  box-shadow: 0px 5px 0px 0px #f1c232, 0px -5px 0px 0px #f1c232;
+  line-height: 1.5rem;
+  font-size: 1.15rem;
+}
+
+.explainBoxHead {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: var(--one);
+  font-family: Merriweather;
+  margin-bottom: var(--one);
+}
+
+@media (max-width: 1200px) {
   .pageHeading {
     text-align: center;
   }
@@ -536,13 +554,13 @@ html:hover {
   }
 }
 
-@media(max-width: 900px) {
+@media (max-width: 900px) {
   .ppl {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .NavLogo {
     width: 80px;
   }
@@ -569,7 +587,7 @@ html:hover {
   }
 }
 
-@media(max-width: 600px) {
+@media (max-width: 600px) {
   .ppl {
     grid-template-columns: 1fr;
   }
@@ -594,7 +612,7 @@ html:hover {
     padding-bottom: var(--two);
   }
 } */
-@media(max-width: 500px) {
+@media (max-width: 500px) {
   .navPagesLinks {
     display: none;
   }
@@ -628,7 +646,7 @@ html:hover {
   }
 }
 
-@media(max-width: 479px) {
+@media (max-width: 479px) {
   .footerImg {
     padding-bottom: 0px;
   }
