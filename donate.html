@@ -388,26 +388,43 @@
 	</div>
 	<script>
 		document.getElementById("close_icon").style.display = "none";
+		var close = false;
 
 		function is_touch_enabled() {
 			return ('ontouchstart' in window) ||
 				(navigator.maxTouchPoints > 0) ||
-				(navigator.msMaxTouchPoints > 0) || true;
+				(navigator.msMaxTouchPoints > 0);
 		}
 
 		if (is_touch_enabled()) {
 			document.getElementById('burger_icon').addEventListener('mouseover', () => {
-				document.getElementById('burgerLinks').style.right = "5px"
-				if (is_touch_enabled()) {
-					document.getElementById("close_icon").style.display = "flex";
-					document.getElementById("burger_icon").style.display = "none";
+				if (!close) {
+					document.getElementById('burgerLinks').style.right = "5px"
+					close = false;
+					if (is_touch_enabled()) {
+						document.getElementById("close_icon").style.display = "flex";
+						document.getElementById("burger_icon").style.display = "none";
+					}
+					setTimeout(() => {
+						console.log("open")
+						close = true
+					}, 510)
 				}
+
 			})
 			document.getElementById('close_icon').addEventListener('mouseover', () => {
-				document.getElementById('burgerLinks').style.right = "-161px"
-				if (is_touch_enabled()) {
-					document.getElementById("close_icon").style.display = "none";
-					document.getElementById("burger_icon").style.display = "flex";
+				console.log("hit")
+				console.log(close)
+				if (close) {
+					document.getElementById('burgerLinks').style.right = "-161px"
+					if (is_touch_enabled()) {
+						document.getElementById("close_icon").style.display = "none";
+						document.getElementById("burger_icon").style.display = "flex";
+					}
+					setTimeout(() => {
+						console.log("close")
+						close = false;
+					}, 510)
 				}
 			})
 		}
@@ -424,9 +441,7 @@
 	</script>
 	<script>
 		var width = window.innerWidth * .90;
-		console.log(Math.floor(width * 9 / 16))
 		if (width < 912) {
-			console.log('hit');
 			document.getElementById('businessPitch').style.height = String(width * 9 / 16) + "px";
 		}
 	</script>
