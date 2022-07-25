@@ -389,53 +389,31 @@
 	<script>
 		document.getElementById("close_icon").style.display = "none";
 		var close = false;
-
-		function is_touch_enabled() {
-			return ('ontouchstart' in window) ||
-				(navigator.maxTouchPoints > 0) ||
-				(navigator.msMaxTouchPoints > 0);
-		}
-
-		if (is_touch_enabled()) {
-			document.getElementById('burger_icon').addEventListener('mouseover', () => {
-				if (!close) {
-					document.getElementById('burgerLinks').style.right = "5px"
-					close = false;
-					if (is_touch_enabled()) {
-						document.getElementById("close_icon").style.display = "flex";
-						document.getElementById("burger_icon").style.display = "none";
-					}
-					setTimeout(() => {
-						console.log("open")
-						close = true
-					}, 510)
-				}
-
-			})
-			document.getElementById('close_icon').addEventListener('mouseover', () => {
-				console.log("hit")
-				console.log(close)
-				if (close) {
-					document.getElementById('burgerLinks').style.right = "-161px"
-					if (is_touch_enabled()) {
-						document.getElementById("close_icon").style.display = "none";
-						document.getElementById("burger_icon").style.display = "flex";
-					}
-					setTimeout(() => {
-						console.log("close")
-						close = false;
-					}, 510)
-				}
-			})
-		}
-		else {
-			document.getElementById('burger_icon_box').addEventListener('mouseover', () => {
+		document.getElementById('burger_icon').addEventListener('mouseover', () => {
+			if (!close) {
 				document.getElementById('burgerLinks').style.right = "5px"
-			})
-			document.getElementById('navBar').addEventListener('mouseleave', () => {
+				setTimeout(() => {
+					console.log("open")
+					document.getElementById("close_icon").style.display = "flex";
+					document.getElementById("burger_icon").style.display = "none";
+					close = true
+				}, 510)
+			}
+
+		})
+		document.getElementById('close_icon').addEventListener('click', () => {
+			console.log("hit")
+			console.log(close)
+			if (close) {
 				document.getElementById('burgerLinks').style.right = "-161px"
-			})
-		}
+				setTimeout(() => {
+					console.log("close")
+					document.getElementById("close_icon").style.display = "none";
+					document.getElementById("burger_icon").style.display = "flex";
+					close = false;
+				}, 510)
+			}
+		})
 
 
 	</script>
