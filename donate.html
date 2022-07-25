@@ -138,16 +138,17 @@
 					<a href="progress" class="navLink">Progress</a>
 					<a href="donate" class="navLink navLinkHere">Donate</a>
 				</div>
-				<div class="burger"id="burger_icon_box">
-                    <img id="burger_icon" src="images/burger_icon.png" alt="burger_icon">
-                </div>
+				<div class="burger" id="burger_icon_box">
+					<img id="burger_icon" src="images/burger_icon.png" alt="burger_icon">
+					<img id="close_icon" src="images/close.png" alt="close_icon">
+				</div>
 				<div class="burgerLinks" id="burgerLinks">
 					<a href="/" class="navLink">Home</a>
 					<a href="team" class="navLink">Team</a>
 					<a href="progress" class="navLink">Progress</a>
 					<a href="donate" class="navLink navLinkHere">Donate</a>
 				</div>
-            </div>
+			</div>
 			<div class="donateContainer">
 				<div class="donateIntro">
 					<div class="donateIntroLeft">
@@ -197,13 +198,12 @@
 					</div>
 				</div>
 				<h1 class="pageHeading" id="linktoPDF">
-					<a href="Team Tiny House Info Packet.pdf" >Check out our Business Pitch</a> 
+					<a href="Team Tiny House Info Packet.pdf">Check out our Business Pitch</a>
 				</h1>
 				<div class="donatePitch">
-					<iframe
-						src="Team Tiny House Info Packet.pdf"
-						frameborder="0" width="100%" height="700px" allowfullscreen="true" mozallowfullscreen="true"
-						webkitallowfullscreen="true" id="businessPitch"></iframe>
+					<iframe src="Team Tiny House Info Packet.pdf" frameborder="0" width="100%" height="700px"
+						allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"
+						id="businessPitch"></iframe>
 				</div>
 				<h1 class="pageHeading">
 					Business Donation Tiers
@@ -387,12 +387,40 @@
 		</div>
 	</div>
 	<script>
-		document.getElementById('burger_icon_box').addEventListener('mouseover', () => {
-      document.getElementById('burgerLinks').style.right = "5px"
-    })
-    document.getElementById('navBar').addEventListener('mouseleave', () => {
-      document.getElementById('burgerLinks').style.right = "-161px"
-    })
+		document.getElementById("close_icon").style.display = "none";
+
+		function is_touch_enabled() {
+			return ('ontouchstart' in window) ||
+				(navigator.maxTouchPoints > 0) ||
+				(navigator.msMaxTouchPoints > 0) || true;
+		}
+
+		if (is_touch_enabled()) {
+			document.getElementById('burger_icon').addEventListener('mouseover', () => {
+				document.getElementById('burgerLinks').style.right = "5px"
+				if (is_touch_enabled()) {
+					document.getElementById("close_icon").style.display = "flex";
+					document.getElementById("burger_icon").style.display = "none";
+				}
+			})
+			document.getElementById('close_icon').addEventListener('mouseover', () => {
+				document.getElementById('burgerLinks').style.right = "-161px"
+				if (is_touch_enabled()) {
+					document.getElementById("close_icon").style.display = "none";
+					document.getElementById("burger_icon").style.display = "flex";
+				}
+			})
+		}
+		else {
+			document.getElementById('burger_icon_box').addEventListener('mouseover', () => {
+				document.getElementById('burgerLinks').style.right = "5px"
+			})
+			document.getElementById('navBar').addEventListener('mouseleave', () => {
+				document.getElementById('burgerLinks').style.right = "-161px"
+			})
+		}
+
+
 	</script>
 	<script>
 		var width = window.innerWidth * .90;
