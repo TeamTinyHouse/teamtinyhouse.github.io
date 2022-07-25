@@ -13,7 +13,7 @@ document.getElementById('burger_icon').addEventListener('mouseover', () => {
 })
 document.getElementById('close_icon').addEventListener('click', () => {
     if (close) {
-        document.getElementById('burgerLinks').style.right = "-161px"
+        document.getElementById('burgerLinks').style.right = "-170px"
         setTimeout(() => {
             document.getElementById("close_icon").style.display = "none";
             document.getElementById("burger_icon").style.display = "flex";
