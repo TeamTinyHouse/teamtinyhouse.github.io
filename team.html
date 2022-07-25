@@ -135,6 +135,7 @@
         </div>
         <div class="burger" id="burger_icon_box">
           <img id="burger_icon" src="images/burger_icon.png" alt="burger_icon">
+          <img id="close_icon" src="images/close.png" alt="close_icon">
         </div>
         <div class="burgerLinks" id="burgerLinks">
           <a href="/" class="navLink">Home</a>
@@ -304,7 +305,8 @@
                     because I&apos;ve wanted to make a tiny house for a long
                     time. It is a sustainable solution to climate change and the
                     housing crisis, which I am passionate about. I look forward
-                    to seeing what this amazing team does! <a href="https://maribellechu.com" target="_blank" rel="noreferrer noopener">Check out my website!</a>
+                    to seeing what this amazing team does! <a href="https://maribellechu.com" target="_blank"
+                      rel="noreferrer noopener">Check out my website!</a>
                   </span>
                   <br />
                   <span></span>
@@ -1221,14 +1223,7 @@
     </div>
   </div>
 </body>
-<script>
-  document.getElementById('burger_icon_box').addEventListener('mouseover', () => {
-      document.getElementById('burgerLinks').style.right = "5px"
-    })
-    document.getElementById('navBar').addEventListener('mouseleave', () => {
-      document.getElementById('burgerLinks').style.right = "-161px"
-    })
-</script>
+<script src="burger.js"></script>
 <script>
   const ppl = document.querySelectorAll('.person')
 

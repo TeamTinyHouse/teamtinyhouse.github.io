@@ -140,6 +140,7 @@
         </div>
         <div class="burger" id="burger_icon_box">
           <img id="burger_icon" src="images/burger_icon.png" alt="burger_icon">
+          <img id="close_icon" src="images/close.png" alt="close_icon">
         </div>
         <div class="burgerLinks" id="burgerLinks">
           <a href="/" class="navLink navLinkHere">Home</a>
@@ -333,14 +334,7 @@
       </div>
     </div>
   </div>
-  <script>
-    document.getElementById('burger_icon_box').addEventListener('mouseover', () => {
-      document.getElementById('burgerLinks').style.right = "5px"
-    })
-    document.getElementById('navBar').addEventListener('mouseleave', () => {
-      document.getElementById('burgerLinks').style.right = "-161px"
-    })
-  </script>
+  <script src="burger.js"></script>
 </body>
 
 </html>
