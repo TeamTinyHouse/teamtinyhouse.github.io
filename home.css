@@ -28,7 +28,7 @@
   flex-direction: row;
   background-size: cover;
   justify-content: center;
-  background-image: url('https://images.unsplash.com/photo-1434394354979-a235cd36269d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDExfHxtb3VudGFpbnN8ZW58MHx8fHwxNjUzOTM3NDQ3&ixlib=rb-1.2.1&w=1500');
+  background-image: url('images/hero_background.jpg');
 }
 
 .home-t-t-h {
