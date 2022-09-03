@@ -161,14 +161,17 @@ html:hover {
 }
 
 .socialIcon {
-  fill: var(--yellow);
+  background-color: #f2b700;
+  fill: var(--white);
+  padding: 3px;
+  border-radius: 7px;
   width: 30px;
   height: 30px;
   text-decoration: none;
 }
 
 .socialIcon:hover {
-  filter: brightness(0);
+  background-color: var(--black);
 }
 
 .footerCredit {
@@ -201,7 +204,7 @@ html:hover {
 
 .footerSocials {
   flex: 0 0 auto;
-  width: 250px;
+  width: 275px;
   display: flex;
   align-items: flex-start;
   margin-right: var(--three);
