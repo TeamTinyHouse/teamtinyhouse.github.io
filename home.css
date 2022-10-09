@@ -66,13 +66,14 @@
 }
 
 .home-mission-text {
-  line-height: 1.5rem;
   padding-top: var(--one);
-  font-size: 1.05rem;
+  font-size: 1.25rem;  
+  line-height: 1.5rem;
 }
 
 .home-mission-bullet {
   margin-left: var(--one);
+  margin-bottom: 10px;
 }
 
 .home-process {
