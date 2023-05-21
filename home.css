@@ -67,8 +67,8 @@
 
 .home-mission-text {
   padding-top: var(--one);
-  font-size: 1.25rem;  
-  line-height: 1.5rem;
+  font-size: 1.15rem;  
+  line-height: 1.25rem;
 }
 
 .home-mission-bullet {
@@ -212,7 +212,7 @@
   }
 
   .home-hero {
-    height: 900px;
+    height: 1000px;
   }
 
   .home-t-t-h {
