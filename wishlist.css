@@ -1,108 +1,128 @@
 /* Feel free to omit the following css  */
-:root{
-    --white: #efefefff;
-    --dl-color-teamtinyhouse-greengrey: #597959ff;
-    --green: #6aa84fff;   
-    --yellow: #f1c232ff;
-    --three: 48px; 
-  } 
-  body{
-    background-color: var(--dl-color-teamtinyhouse-greengrey);
-    padding: 10px;    
-    width: 100%;
-  }
+:root {
+  --white: #efefefff;
+  --dl-color-teamtinyhouse-greengrey: #597959ff;
+  --green: #6aa84fff;
+  --yellow: #f1c232ff;
+  --three: 48px;
+}
 
-  .wishlistcontainer {
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+body {
+  background-color: var(--dl-color-teamtinyhouse-greengrey);
+  padding: 10px;
+  width: 100%;
+}
 
-  .pageHeading {
-      color: var(--white);
-      font-size: 3rem;
-      margin-top: var(--three);
-      font-family: Merriweather;
-      margin-bottom: var(--three);
-  }
-  
-  /* keep this css below plss :)  */
-  /* make look better on wide screens, ADD flex picture on the right */
-  
-  .wishlist{
-    box-shadow: 10px 10px 0px 0px #FFF;
-  }
-  
-  .collapsible {
-    background-color: var(--yellow);
-    color: #000;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-  
-    text-align: left;
-    outline: none;
-    font-size: 20px;
-    font-family: Merriweather;
-    transition: 0.2s;
-  }
-  .active, .collapsible:hover {
-    background-color:#f1f1f1;    
-    border-radius: 20px 20px 0px 0px;
-  }
-  .wishlistContent {
-    padding: 0 18px;
-    /* display: none; */
-    overflow: hidden;
-    background-color: #f1f1f1;    
-    border-radius: 0px 0px 20px 20px ;
-  
-    max-height: 0;
-    transition: max-height 0.2s ease-out;
-    width: 100%;
-  }
-  .subphaseList{
-    margin: 18px;
-  }
-  
-  .collapsible:after {
-    content: '\02795';/* plus unicode */
-    font-size: 13px;
-    color: var(--white);
-    float: right;
-    margin-left: 5px;
-  }
-  
-  .active:after {
-    content: "\2796"; /* minus unicode */
-  }
+.wishlistcontainer {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  li {
-    font-size: 1.25rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+.pageHeading {
+  color: var(--white);
+  font-size: 3rem;
+  margin-top: var(--three);
+  font-family: Merriweather;
+  margin-bottom: var(--three);
+}
 
-  button {
-    margin-top: 10px;
-    border-radius: 20px
-  }
+/* keep this css below plss :)  */
+/* make look better on wide screens, ADD flex picture on the right */
 
-  .navBar, .footer {
-    
-    margin-left: auto;
-    margin-right: auto;
-  }
+.wishlist {
+  box-shadow: 10px 10px 0px 0px #FFF;
+}
 
-  .everything-container {
-    width: 100%;
-    display: flex;
-    overflow: auto;
-    min-height: 100vh;
-    align-items: center;
-    flex-direction: column;
-  }
-  
+.collapsible {
+  background-color: var(--yellow);
+  color: #000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  font-family: Merriweather;
+  transition: 0.2s;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #f1f1f1;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.wishlistContent {
+  padding: 0 18px;
+  /* display: none; */
+  overflow: hidden;
+  background-color: #f1f1f1;
+  border-radius: 0px 0px 20px 20px;
+
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  width: 100%;
+}
+
+.subphaseList {
+  margin: 18px;
+}
+
+.collapsible:after {
+  content: '\02795';
+  /* plus unicode */
+  font-size: 13px;
+  color: var(--white);
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+  /* minus unicode */
+}
+
+li {
+  font-size: 1.25rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 10px;
+  border-radius: 20px
+}
+
+.navBar,
+.footer {
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.everything-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.phase {
+  color: var(--white);
+  font-size: 2rem;
+  margin-top: var(--three);
+  font-family: Merriweather;
+  margin-bottom: var(--three);
+  text-align: left;
+}
+
+.phaseContent {
+  width: 100%;
+}
