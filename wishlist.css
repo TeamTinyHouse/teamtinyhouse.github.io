@@ -163,3 +163,16 @@ td {
 	margin-bottom: 30px;
 	font-size: 18px;
 }
+
+#linktoPDF {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.donatePitch {
+  width: 90%;
+  max-width: 1000px;
+  /* height: 80%; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
